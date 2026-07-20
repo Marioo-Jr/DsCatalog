@@ -4,7 +4,9 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -26,11 +28,13 @@ public class User implements Serializable{
     private Long id;
     private String firstName;
     private String lastName;
+
+    @Column(unique = true)
     private String email;
     private String password;
 
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)//forca a vir os perfis do usuario junto.
 	@JoinTable(name = "tb_user_role",
 		joinColumns = @JoinColumn(name = "user_id"),
 		inverseJoinColumns = @JoinColumn(name = "role_id"))	
