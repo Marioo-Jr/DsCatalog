@@ -68,6 +68,7 @@ public class CategoryService {
     	}
         catch (DataIntegrityViolationException e) {
             throw new DatabaseException("Falha de integridade referencial");
+			//a 
         }
     }
 }

@@ -1,0 +1,15 @@
+C:\Users\junin\OneDrive\Área de Trabalho\DsCatalog\dscatalog-\src\main\java\com\devsuperior\dscatalog\DscatalogApplication.java
+C:\Users\junin\OneDrive\Área de Trabalho\DsCatalog\dscatalog-\src\main\java\com\devsuperior\dscatalog\dto\CategoryDTO.java
+C:\Users\junin\OneDrive\Área de Trabalho\DsCatalog\dscatalog-\src\main\java\com\devsuperior\dscatalog\dto\ProductDTO.java
+C:\Users\junin\OneDrive\Área de Trabalho\DsCatalog\dscatalog-\src\main\java\com\devsuperior\dscatalog\entities\Category.java
+C:\Users\junin\OneDrive\Área de Trabalho\DsCatalog\dscatalog-\src\main\java\com\devsuperior\dscatalog\entities\Product.java
+C:\Users\junin\OneDrive\Área de Trabalho\DsCatalog\dscatalog-\src\main\java\com\devsuperior\dscatalog\repositories\CategoryRepository.java
+C:\Users\junin\OneDrive\Área de Trabalho\DsCatalog\dscatalog-\src\main\java\com\devsuperior\dscatalog\repositories\ProductRepository.java
+C:\Users\junin\OneDrive\Área de Trabalho\DsCatalog\dscatalog-\src\main\java\com\devsuperior\dscatalog\resources\CategoryResource.java
+C:\Users\junin\OneDrive\Área de Trabalho\DsCatalog\dscatalog-\src\main\java\com\devsuperior\dscatalog\resources\exceptions\ResourceExceptionHandler.java
+C:\Users\junin\OneDrive\Área de Trabalho\DsCatalog\dscatalog-\src\main\java\com\devsuperior\dscatalog\resources\exceptions\StandardError.java
+C:\Users\junin\OneDrive\Área de Trabalho\DsCatalog\dscatalog-\src\main\java\com\devsuperior\dscatalog\resources\ProductResource.java
+C:\Users\junin\OneDrive\Área de Trabalho\DsCatalog\dscatalog-\src\main\java\com\devsuperior\dscatalog\services\CategoryService.java
+C:\Users\junin\OneDrive\Área de Trabalho\DsCatalog\dscatalog-\src\main\java\com\devsuperior\dscatalog\services\exceptions\DatabaseException.java
+C:\Users\junin\OneDrive\Área de Trabalho\DsCatalog\dscatalog-\src\main\java\com\devsuperior\dscatalog\services\exceptions\ResourceNotFoundException.java
+C:\Users\junin\OneDrive\Área de Trabalho\DsCatalog\dscatalog-\src\main\java\com\devsuperior\dscatalog\services\ProductService.java
