@@ -1,8 +1,12 @@
 package com.devsuperior.dscatalog.entities;
 
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -18,9 +22,8 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "tb_user")
-public class User implements Serializable{
+public class User implements UserDetails{
     
-    private static final long serialVersionUID = 1L;
 
 
     @Id
@@ -106,7 +109,21 @@ public class User implements Serializable{
 
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
+    }   
+
+
+    public void addRole(Role role) {
+    	roles.add(role);
     }
+    
+	public boolean hasRole(String roleName) {
+		for (Role role : roles) {
+			if (role.getAuthority().equals(roleName)) {
+				return true;
+			}
+		}
+		return false;
+	}
 
 
     @Override
@@ -118,7 +135,7 @@ public class User implements Serializable{
     }
 
 
-
+    
 
     @Override
     public boolean equals(Object obj) {
@@ -135,6 +152,22 @@ public class User implements Serializable{
         } else if (!id.equals(other.id))
             return false;
         return true;
+    }
+
+
+
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+       return roles;
+    }
+
+
+
+
+    @Override
+    public String getUsername() {
+        return email;
     }
 
 
