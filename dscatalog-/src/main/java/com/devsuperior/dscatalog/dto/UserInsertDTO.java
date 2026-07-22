@@ -2,10 +2,16 @@ package com.devsuperior.dscatalog.dto;
 
 import com.devsuperior.dscatalog.services.validation.UserInsertValid;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
 @UserInsertValid
 public class  UserInsertDTO extends UserDTO {
     private static final long serialVersionUID = 1L;
 
+
+    @NotBlank(message = "Campo obrigatorio")
+    @Size(min = 8, message = "Deve ter no minimo 8 caracteres")
     private String password;
 
 
