@@ -29,7 +29,7 @@ public class EmailService {
             emailSender.send(message);
         } 
         catch (MailException e){
-        	throw new EmailException("Failed to send email");
-        } 
+        	throw new EmailException("Failed to send email", e);
+        }
     }
 }
