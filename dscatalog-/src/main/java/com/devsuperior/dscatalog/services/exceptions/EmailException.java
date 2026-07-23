@@ -7,7 +7,5 @@ public class EmailException extends RuntimeException {
 		super(msg);
 	}
 
-	public EmailException(String msg, Throwable cause) {
-		super(msg, cause);
-	}
+	
 }
