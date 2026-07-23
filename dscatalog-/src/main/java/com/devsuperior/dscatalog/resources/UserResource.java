@@ -67,4 +67,12 @@ public class UserResource {
 		service.delete(id);
 		return ResponseEntity.noContent().build();
 	}
+
+	@PreAuthorize("hasAnyRole('ROLE_OPERATOR','ROLE_ADMIN')")
+	@GetMapping(value = "/me")
+	public ResponseEntity<UserDTO> findMe() {
+		UserDTO dto = service.findMe();
+		return ResponseEntity.ok().body(dto);
+	}
+
 } 
